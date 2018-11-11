@@ -19,6 +19,7 @@ RUN OS=$(. /etc/os-release; echo "$ID") && \
        $(lsb_release -cs) \
        stable" && \
    apt-get update && \
-   apt-get -y install docker-ce
+   apt-get -y install docker-ce && \
+   usermod -a -G docker jenkins
 
 USER jenkins
