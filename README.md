@@ -8,6 +8,7 @@ $ docker pull clarketm/jenkins
 ## Run
 ```
 $ PORT=1234
+
 $ docker run \
   --name "jenkins" \
   -p $PORT:8080 \
