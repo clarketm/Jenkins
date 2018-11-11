@@ -20,6 +20,4 @@ RUN OS=$(. /etc/os-release; echo "$ID") && \
        stable" && \
    apt-get update && \
    apt-get -y install docker-ce && \
-   usermod -a -G docker jenkins
-
-USER jenkins
+   usermod -a -G docker root
